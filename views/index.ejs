@@ -1,0 +1,17 @@
+import './src/input.css'
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div class="container flex flex-wrap ">
+    <% items.forEach((item) =>{ %>
+    <div class="card" style="width: 30%;">
+      <h2><%= item.name %></h2>
+      <p><%= item.description %></p>
+    </div> <%}); %>
+ </div>
+</body>
+</html>
